@@ -1,5 +1,18 @@
 // components/Services.js
 import React from 'react';
+import EmailLogo from './images/email_Logo.jpg';
+import PalleteImage from './images/Pallete.png';
+import ShoppingImage from './images/shopping-cart.png';
+import FlatiiconImage from './images/Flatiicon.png';
+import MarkettingImage from './images/Marketting.png';
+import DEVImage from './images/DEV.png';
+
+
+
+
+
+
+
 
 function Services() {
   const services = [
@@ -36,22 +49,82 @@ function Services() {
   ];
 
   return (
-    <section className="services">
-      <div className="container">
-        <h6 className='text-center'>ABOUT US</h6>
-        <h2>We offer expert web and marketing services</h2>
-        <div className="services-grid">
+  
+    <section className="services ">
+  <div className="container relative z-10 text-center font-[inherit]">
+    <div  className="relative overflow-hidden">
+    <h6>ABOUT US</h6>
+    <h1 className="relative z-10">We offer expert web and marketing services</h1>
+    </div>
+   <div className="services-grid mt-8">
           {services.map((service) => (
             <div key={service.id} className="service-card">
+              {/* Conditional image rendering for the first service */}
+              {service.id === 1 && (
+                <img 
+                  src={EmailLogo} 
+                  alt={`${service.title} icon`} 
+                  className="service-icon" 
+                  style={{ width: '50px', height: '50px', margin: '0 auto 10px' }} 
+                />
+              )}
+              {/* 2. CONDITIONAL IMAGE RENDERING FOR THE SECOND SERVICE */}
+              {service.id === 2 && (
+                <img 
+                  src={PalleteImage} // Use the new imported image
+                  alt={`${service.title} icon`} 
+                  className="service-icon" 
+                  style={{ width: '50px', height: '50px', margin: '0 auto 10px' }} 
+                />
+              )}
+               {service.id === 3 && (
+                <img 
+                  src={ShoppingImage} // Use the new imported image
+                  alt={`${service.title} icon`} 
+                  className="service-icon" 
+                  style={{ width: '50px', height: '50px', margin: '0 auto 10px' }} 
+                />
+              )}
+              {service.id === 4 && (
+                <img 
+                  src={FlatiiconImage} // Use the new imported image
+                  alt={`${service.title} icon`} 
+                  className="service-icon" 
+                  style={{ width: '50px', height: '50px', margin: '0 auto 10px' }} 
+                />
+              )}
+              {service.id === 5 && (
+                <img 
+                  src={MarkettingImage} // Use the new imported image
+                  alt={`${service.title} icon`} 
+                  className="service-icon" 
+                  style={{ width: '50px', height: '50px', margin: '0 auto 10px' }} 
+                />
+              )}
+              {service.id === 6 && (
+                <img 
+                  src={DEVImage} // Use the new imported image
+                  alt={`${service.title} icon`} 
+                  className="service-icon" 
+                  style={{ width: '125px', height: '95px', margin: '0 auto 10px' }} 
+                />
+              )}
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              
             </div>
           ))}
         </div>
-      </div>
-      <button className="btn h-14  w-45 hover:bg-emerald-700 bg-emerald-500 rounded-full text-white">More Services</button>
-    </section>
+    <button className="btn h-14 w-45 hover:bg-emerald-700 bg-emerald-500 rounded-full text-white mt-8">
+      More Services
+    </button>
+  </div>
+
+  {/* Floating symbols */}
+  <span className="symbol circle">◯</span>
+  <span className="symbol triangle">△</span>
+  <span className="symbol plus">+</span>
+  <span className="symbol star">★</span>
+</section>
   );
 }
 

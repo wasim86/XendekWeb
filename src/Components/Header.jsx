@@ -1,12 +1,18 @@
 // components/Header.js
 import React from 'react';
+import Logo from './images/Logo.png';
+import "tailwindcss";
 
 function Header() {
   return (
-    <header className="header">
+    <header className="header bg-[#fefbf3]">
       <div className="container">
-        <div className="logo">
+        {/* <div className="logo">
           <h1 className='text-2xl font-bold text-black'>XendekWeb</h1>
+        </div> */}
+        <div className="logo ">
+          {/* Replace text with image */}
+          <img src={Logo} alt="XendekWeb Logo" className="h-[60px]" />
         </div>
         
         <nav className="navigation">

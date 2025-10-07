@@ -34,7 +34,7 @@ const steps = [
 const Process = () => {
   return (
   <>
-    <section className="w-full min-h-screen bg-[#ffffff] flex items-center justify-center py-15 px-4">
+    <section className="w-full min-h-screen bg-[#fefbf3] flex items-center justify-center py-15 px-4">
       <div className="max-w-6xl bg-white    flex flex-col lg:flex-row items-center p-8 lg:p-14 w-full">
         {/* Left Image */}
         <div className="flex-[0.9] flex flex-col justify-center items-center mb-8 lg:mb-0">

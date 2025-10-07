@@ -12,7 +12,7 @@ const techIcons = [
 ];
 
 const WebTechnology = () => (
-  <section className="w-full min-h-screen bg-[#ffffff] flex items-center py-20 px-3 md:px-0">
+  <section className="w-full min-h-screen bg-[#fefbf3] flex items-center py-20 px-3 md:px-0">
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center w-full">
       {/* Left */}
       <div className="flex-1 flex flex-col items-start justify-center">

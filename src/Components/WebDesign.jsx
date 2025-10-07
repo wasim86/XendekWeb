@@ -2,7 +2,7 @@ import React from "react";
 
 const WebDesignSection = () => {
   return (
-    <section className="bg-[#ffffff] h-96    ">
+    <section className="bg-[#fefbf3] h-96    ">
       <div className="max-w-7xl  flex  md:flex-row  gap-60">
         {/* Left Section */}
         <div className=" ">    

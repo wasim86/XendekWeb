@@ -8,7 +8,7 @@ const stats = [
 ];
 
 const StatsBar = () => (
-  <section className="bg-[#ffffff]">
+  <section className="bg-[#fefbf3]">
     <div className="max-w-6xl mx-auto flex">
       {stats.map((stat, idx) => (
         <div key={stat.label} className="flex-1 flex flex-col items-center relative">
