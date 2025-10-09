@@ -52,9 +52,11 @@ function Services() {
   
     <section className="services ">
   <div className="container relative z-10 text-center font-[inherit]">
-    <div  className="relative overflow-hidden">
-    <h6>ABOUT US</h6>
-    <h1 className="relative z-10">We offer expert web and marketing services</h1>
+    <div className="about-page bg-[#fefbf6] p-10 text-center rounded-lg">
+      <h1 className="sc_item_subtitle sc_title_subtitle sc_align_center sc_item_subtitle_above sc_item_title_style_default">ABOUT US</h1>
+      <h2 className="w-[700px] text-[50px] ml-[230px] leading-[1] font-[cursive] text-[#181D4E]">
+        We offer expert web and marketing services
+      </h2>
     </div>
    <div className="services-grid mt-8">
           {services.map((service) => (
