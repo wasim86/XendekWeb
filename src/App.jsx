@@ -12,7 +12,10 @@ import WebDesignSection from "./Components/WebDesign";
 import WebTechnology from "./Components/WebTechnology";
 import StatsBar from "./Components/StatsBar";
 import BrandsBar from "./Components/BrandsBar";
+<<<<<<< HEAD
 import CustomCursor from "./Components/customCursor"; // ✅ Custom Cursor
+=======
+>>>>>>> 553ba59facc04f3fb4a98c9af24b2659393a8462
 
 
 import DetailPage from "./Components/DetailPage"; // ✅ New Page

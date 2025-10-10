@@ -17,7 +17,11 @@ const About = () => {
     <h1 className="title font-bold text-4xl md:text-5xl mb-6 text-[#2b2f4b] leading-tight">
       We improve your online presence.
     </h1>
+<<<<<<< HEAD
     <p className="description1 text-[#141414] text-base mb-4">
+=======
+    <p className="description text-[#141414] text-base mb-4">
+>>>>>>> 553ba59facc04f3fb4a98c9af24b2659393a8462
       Imagine your website as your leading 24/7 salesperson. Your website makes the first impression on your visitors. If the first impression is positive, the visitors will stay on your site to find out more.
     </p>
     <p className="description text-[#141414] text-base mb-4">
@@ -34,4 +38,8 @@ const About = () => {
   );
 };
 
+<<<<<<< HEAD
 export default About;
+=======
+export default About;
+>>>>>>> 553ba59facc04f3fb4a98c9af24b2659393a8462
