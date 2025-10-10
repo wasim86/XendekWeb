@@ -11,7 +11,7 @@ import WebDesignSection from "./Components/WebDesign";
 import WebTechnology from "./Components/WebTechnology";
 import StatsBar from "./Components/StatsBar";
 import BrandsBar from "./Components/BrandsBar";
-// import BrandsSection from './Components/BrandsSection';
+
 
 import DetailPage from "./Components/DetailPage"; // ✅ New Page
 import "./App.css";
@@ -47,7 +47,7 @@ function App() {
               <WebTechnology />
               <Testimonials />
               <BrandsBar />
-              {/* <BrandsSection /> */}
+           
               <Footer />
             </>
           }
@@ -63,4 +63,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;               
