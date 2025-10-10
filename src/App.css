@@ -12,6 +12,10 @@ body {
   color: #333;
 }
 
+/* logo brand */
+.logo1 {
+  margin-left: 300px;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -148,9 +152,12 @@ body {
   margin-bottom: 1rem;
 }
 .btn{
- text-align: center;
- margin-top: 50px;
- margin-left: 650px;
+  text-align: center;
+  margin-top: 34px;
+  margin-left: 8px;
+  font-size: 13px;
+  height: 38px;
+  width: 155px;
 }
 
 /* About Section */
@@ -339,7 +346,7 @@ body {
 /* Common styles for floating symbols */
 .floating-symbol {
   position: absolute;
-  font-size: 2rem;
+  font-size: 15px;
   
   animation: float 4s linear infinite;
   pointer-events: none;

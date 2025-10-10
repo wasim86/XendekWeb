@@ -12,7 +12,7 @@ function Hero() {
 
         {/* Left side - Text */}
         <div className="relative w-full md:w-1/2 flex flex-col justify-center z-10 ">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-2xl md:text-5xl text-blue-950  font-bold mb-6">
             Launch your new website and start to engage new users
           </h1>
 
