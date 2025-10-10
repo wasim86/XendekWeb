@@ -1,42 +1,37 @@
-// components/About.js
-import React from 'react';
-
-function About() {
+import React from "react";
+import about from "./Images/AboutImage.png";
+const About = () => {
   return (
-    <section className="about bg-white-100">
-      <div className="container bg-white-100">
-        <p className=' flex items-center justify-center bg-white-100'>WHAT WE DO</p>
-        <h2>We improve your online presence</h2>
-        <div className="about-content bg-white-100">
-          <p>
-            Imagine your website as your leading 24/7 salesperson. Your website makes the 
-            first impression on your visitors. If the first impression is positive, the 
-            visitors will stay on your site to find out more.
-          </p>
-          <p>
-            Effective online advertising helps you reach the right audience, but a well-designed 
-            website helps convert your traffic into leads.
-          </p>
-          <p>
-            Our company focuses on providing all the essential elements that are necessary to 
-            make your website look good and reach your target audience.
-          </p>
-          <button className=" bt1 h-13 flex justify-center items-center  w-50 hover:bg-emerald-700 bg-emerald-500  rounded-full text-white">
-          Discover Now
-        </button>
-        </div>
-        
-        {/* <div className="web-development-section text-5xl">
-          <h3>Web Design & Development</h3>
-          <p  className='text-lg mt-5'>
-            We are knowledgeable web development company offering custom web development solutions. 
-            We all know the way to build robust and feature-rich websites, web apps, web portals, 
-            eCommerce stores with engaging UI/UX design.
-          </p>
-        </div> */}
-      </div>
-    </section>
+   
+     
+    <div className="container flex flex-col md-flex-row items-center justify-between py-10">
+  <img
+    src={about}
+    alt="about"
+    className="rotate-about w-full md-max-w-390px object-cover"
+  />
+  <div className="content-area mt-6 md-ml-10 max-w-xl">
+    <div className="subtitle uppercase tracking-widest font-semibold text-[#2b2f4b] text-xs">
+      What We Do
+    </div>
+    <h1 className="title font-bold text-4xl md:text-5xl mb-6 text-[#2b2f4b] leading-tight">
+      We improve your online presence.
+    </h1>
+    <p className="description text-[#141414] text-base mb-4">
+      Imagine your website as your leading 24/7 salesperson. Your website makes the first impression on your visitors. If the first impression is positive, the visitors will stay on your site to find out more.
+    </p>
+    <p className="description text-[#141414] text-base mb-4">
+      Effective online advertising helps you reach the right audience, but a well-designed website helps convert your traffic into leads.
+    </p>
+    <p className="description text-[#141414] text-base mb-8">
+      Our company focuses on providing all the essential elements that are necessary to make your website look good and reach your target audience.
+    </p>
+    <button className="btn-discover px-6 py-3 rounded-full bg-[#32d97] text-white text-lg font-semibold shadow hover:bg-[#28b87e] transition-all">
+      Discover Now
+    </button>
+  </div>
+</div>
   );
-}
+};
 
-export default About;
+export default About;

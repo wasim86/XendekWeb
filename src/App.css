@@ -161,37 +161,160 @@ body {
 }
 
 /* About Section */
-.about {
-  padding: 80px 0;
-}
-.h1{
-  font-size: 55px;
-
-}
-.about h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.2rem;
+/* Reset and base styles */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.about-content {
-  margin-bottom: 3rem;
-}
-.btn1 {
-  background-color: #007bff;
+.flex {
+  display: flex;
 }
 
-.about p {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+.flex-col {
+  flex-direction: column;
 }
 
-.web-development-section h3 {
-  color: #007bff;
+.md-flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Image styling */
+.rotate-about {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-top: -250px;
+  transition: transform 0.1s ease; /* Smooth transition for hover effects */
+  animation: shakeImage 8s ease-in-out infinite; /* New shaking animation */
+}
+
+.md-max-w-390px {
+  max-width: 390px;
+}
+
+/* New: Increase size for larger screens */
+@media (min-width: 768px) {
+  .rotate-about {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+/* Ensure the object-cover class works */
+.object-cover {
+  object-fit: cover;
+}
+
+/* Define the new shaking animation */
+@keyframes shakeImage {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -10px); /* Slight right and up */
+  }
+  50% {
+    transform: translate(-10px, 10px); /* Slight left and down */
+  }
+  75% {
+    transform: translate(10px, 10px); /* Slight right and down */
+  }
+  100% {
+    transform: translate(0, 0); /* Back to original position */
+  }
+}
+/* Content area */
+.content-area {
+  flex: 1;
+  margin-top: 1.5rem;
+}
+
+.md-ml-10 {
+  margin-left: 2.5rem;
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+  color: #2b2f4b;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.title {
+  color: #2b2f4b;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.description {
+  color: #141414;
+  font-size: 1rem;
+  line-height: 1.5;
   margin-bottom: 1rem;
 }
 
+/* Button styling */
+.btn-discover {
+  padding:8px 25px;
+  border-radius: 9999px;
+  background-color: #32d297;
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
 
+.btn-discover:hover {
+  background-color: #28b87e;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .content-area {
+    margin-top: 0;
+  }
+
+  .md-flex-row {
+    flex-direction: row;
+  }
+
+  .md-max-w-390px {
+    max-width: 390px;
+  }
+
+  .md-ml-10 {
+    margin-left: 2.5rem;
+  }
+
+}
 
 
 /* Testimonials Section */
@@ -456,5 +579,3 @@ input {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-
