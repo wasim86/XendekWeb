@@ -5,12 +5,14 @@ import Hero from "./Components/Hero";
 import Services from "./Components/Services";
 import About from "./Components/About";
 import Process from "./Components/Process";
+
 import Testimonials from "./Components/Testimonials";
 import Footer from "./Components/Footer";
 import WebDesignSection from "./Components/WebDesign";
 import WebTechnology from "./Components/WebTechnology";
 import StatsBar from "./Components/StatsBar";
 import BrandsBar from "./Components/BrandsBar";
+import CustomCursor from "./Components/customCursor"; // ✅ Custom Cursor
 
 
 import DetailPage from "./Components/DetailPage"; // ✅ New Page
@@ -37,12 +39,13 @@ function App() {
           path="/"
           element={
             <>
+              <CustomCursor />
               <Hero />
               <Services />
               <About />
               <WebDesignSection />
-              <WebTechnology />
               <Process />
+              
               <StatsBar />
               <WebTechnology />
               <Testimonials />

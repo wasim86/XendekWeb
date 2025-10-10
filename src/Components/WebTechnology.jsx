@@ -15,7 +15,7 @@ const WebTechnology = () => (
   <section className="w-full min-h-screen bg-[#fefbf3] flex items-center py-20 px-3 md:px-0">
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center w-full">
       {/* Left */}
-      <div className="flex-1 flex flex-col items-start justify-center">
+      <div className=" items-start justify-center">
         <p className="uppercase font-bold tracking-widest text-xs text-[#19244c] mb-1">web</p>
         <h2 className="text-4xl md:text-5xl font-bold text-[#19244c] mb-5 leading-tight">
           Technologies and <br />
@@ -25,12 +25,12 @@ const WebTechnology = () => (
         <p className="text-gray-500 text-lg mb-8 max-w-lg">
           We deliver customize IT services and solutions to global businesses since 2010, with 100% project delivery success. Hire the best dedicated web developers at affordable prices.
         </p>
-        <button className="h-12 w-50 bg-[#ff6584] hover:bg-[#ff4766] text-white font-semibold text-base px-10 py-3 rounded-full shadow-md transition">
+        <button className="h-12 w-50 bg-[#ff6584] flex-column hover:bg-[#ff4766] text-white font-semibold text-base px-10 py-3 rounded-full shadow-md transition">
           Discover Now
         </button>
       </div>
       {/* Right */}
-      <div className="flex-1 mt-12 md:mt-0 flex justify-center items-center relative min-h-[450px]">
+      <div className=" flex-column mt-12 md:mt-0 flex justify-center items-center relative min-h-[450px]">
         {/* Circles */}
         <div className="absolute w-[350px] h-[350px] md:w-[430px] md:h-[430px] rounded-full border border-[#eceaea] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
         <div className="absolute w-[250px] h-[250px] md:w-[320px] md:h-[320px] rounded-full border border-[#eceaea] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>

@@ -26,7 +26,7 @@ const brands = [
  function BrandsBar() {
   return (
     <section className="w-full bg-white py-10">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4">
+      <div className="max-w-7xl mx-auto flex flex-column md:flex-row items-center justify-between gap-8 px-4">
         {/* Logos */}
         <div className="logo1 flex flex-wrap justify-center md:justify-start items-center gap-8 md:gap-12 flex-1">
           {brands.map((brand, index) => (
@@ -34,7 +34,7 @@ const brands = [
               key={index}
               src={brand.src}
               alt={brand.alt}
-              className="h-30 w-auto  "
+              className="h-30  "
             />
           ))}
         </div>

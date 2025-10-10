@@ -11,7 +11,13 @@ body {
   line-height: 1.6;
   color: #333;
 }
-
+/* perfect solution */
+.web1{
+  margin-left: 211px;
+}
+.read1{
+  margin-top: 44px;
+}
 /* logo brand */
 .logo1 {
   margin-left: 300px;
@@ -271,6 +277,9 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1rem;
+}
+.description1  {
+  margin-top:44px
 }
 
 /* Button styling */
