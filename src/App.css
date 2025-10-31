@@ -1,8 +1,7 @@
 @import "@fontsource/poppins";
 
 * {
-  margin: 0;
-  padding: 0;
+  
   box-sizing: border-box;
 }
 
@@ -20,7 +19,7 @@ body {
 }
 /* logo brand */
 .logo1 {
-  margin-left: 300px;
+  margin-left: 250px;
 }
 .container {
   max-width: 1200px;
@@ -77,7 +76,7 @@ body {
 .hero {
  
   color: rgb(12, 11, 11);
-  padding-top: 75px;
+  padding-top: 0px;
   padding-left: 75px;
   margin-top: 0;
   margin-left: 50px;
